@@ -1,8 +1,7 @@
  Multi-Document QA System using Graph RAG
 A smart Question-Answering system that reads multiple documents, builds a Knowledge Graph, and uses Graph RAG architecture to provide highly accurate answers.
 
-🚀 Live Demo
-(Will add the hosted link here after Step 4)
+[🚀 Click here to use the Live App](https://graph-rag-app-system-3t4qitro9ucjevheqpp5gd.streamlit.app/)
 
 📄 How It Works
 This project uses a Graph RAG (Retrieval Augmented Generation) pipeline:
