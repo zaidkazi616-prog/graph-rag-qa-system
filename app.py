@@ -66,7 +66,7 @@ st.success("✅ System Ready! Ask me anything about AI, NLP, or Graphs.")
 # --- USER INTERFACE ---
 question = st.text_input("Enter your question:", placeholder="e.g., What is Deep Learning?")
 
-if st.button("🔍 Get Answer") and question:
+if st.button("Get Answer") and question:
     with st.spinner("Searching Graph & Generating Answer..."):
         # Step A: Vector Search
         q_embedding = embedder.encode([question])[0]
@@ -93,12 +93,12 @@ if st.button("🔍 Get Answer") and question:
         answer = qa_tokenizer.decode(inputs.input_ids[0, answer_start:answer_end])
         
         # Display Results
-        st.markdown("### 📝 Answer:")
+        st.markdown("### Answer:")
         st.info(answer)
         
-        st.markdown("### 📚 Sources Retrieved from Graph:")
+        st.markdown("### Sources Retrieved from Graph:")
         for src in set(sources_used):
-            st.markdown(f"- 📄 `{src}`")
+            st.markdown(f"- `{src}`")
 
 # Footer
 st.markdown("---")
