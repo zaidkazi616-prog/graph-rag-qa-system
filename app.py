@@ -61,7 +61,7 @@ def build_graph_rag():
 with st.spinner("🧠 Loading AI Models & Building Knowledge Graph... (Takes about 1 minute on first load)"):
     chunks, embeddings, graph, embedder, qa_tokenizer, qa_model = build_graph_rag()
 
-st.success("✅ System Ready! Ask me anything about AI, NLP, or Graphs.")
+st.success("Ask me anything about AI, NLP, or Graphs.")
 
 # --- USER INTERFACE ---
 question = st.text_input("Enter your question:", placeholder="e.g., What is Deep Learning?")
